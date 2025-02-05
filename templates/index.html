@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfolio.</div>
+            <div class="nav-links">
+                <a href="#home">Home</a> 
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="page-content">
+        <div class="main-content">
+            <div class="left-section">
+                <h1>Hello, It's Me</h1>
+                <h2>Dhana sri</h2>
+                <h3>And I'm a <span class="highlight">Student</span></h3>
+                <p class="description">
+                    I'm a passionate final year BSc Data Science student at K.B.N College, 
+                    with a keen interest in data analytics and machine learning. 
+                    I am very much interested in learning new technologies.</p>
+                <div class="social-icons">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="www.linkedin.com/in/g-naga-dhanasri-ab74b334a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="btn-container">
+                    <button class="btn">View projects</button>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="profile-image-container">
+                    <img src="{{url_for('static', filename='profile.jpg')}}" alt="Profile Picture" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page-content">
+        <div class="about">
+            <div class="about-container">
+                <div class="about-wrapper">
+                    <div class="about-image-section">
+                        <div class="profile-frame">
+                            <img src="{{url_for('static', filename='profile.jpg')}}" alt="Profile Picture" class="profile-pic">
+                        </div>
+                    </div>
+                    <div class="about-content-section">
+                        <h2>About <span class="highlight">Me</span></h2>
+                        <h3>Student.</h3>
+                        <p class="about-description">
+                           I am a passionate final year BSc Data Science student at K.B.N College, with a keen interest in data analytics and machine learning. Throughout my academic journey, I have developed strong analytical skills and a deep understanding of statistical concepts.
+                           I have completed several academic projects that have enhanced my practical knowledge in data visualization, predictive modeling, and statistical analysis. My coursework has equipped me with proficiency in programming languages such as Python and R, along with experience in using various data analysis tools and frameworks.
+                           I am particularly interested in applying data science solutions to real-world problems and am always eager to learn new technologies and methodologies in this rapidly evolving field.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>My <span class="highlight">Education</span></h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">2022 - 2025</div>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Bachelor of Science in Data Science</h3>
+                    <p class="school">K.B.N College</p>
+                    <p class="grade">CGPA: 8.0</p>
+                    <p class="details">Specialized in Data Science, Machine Learning, and Statistical Analysis</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <i class="fas fa-school"></i>
+                    <h3>Intermediate (MPC)</h3>
+                    <p class="school">K.B.N College</p>
+                    <p class="grade">Percentage: 74%</p>
+                    <p class="details">Focused on Mathematics, Physics, and Chemistry</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">2019 - 2020</div>
+                    <i class="fas fa-school"></i>
+                    <h3>Secondary School (SSC)</h3>
+                    <p class="school">Lahari Vidya Mandir High School</p>
+                    <p class="grade">CGPA: 9.3</p>
+                    <p class="details">Completed secondary education with distinction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="page-content">
+        <div class="skills-content">
+            <h2>My <span class="highlight">Skills</span></h2>
+            <div class="skills-grid">
+                <!-- HTML Skill -->
+                <div class="skill-item">
+                    <div class="skill-circle">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">65%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="gradientColor">
+                                    <stop offset="0%" stop-color="#00e5ff" />
+                                    <stop offset="100%" stop-color="#7b2ff7" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" class="circle-90" />
+                        </svg>
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+
+                <!-- CSS Skill -->
+                <div class="skill-item">
+                    <div class="skill-circle">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">65%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" class="circle-85" />
+                        </svg>
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+
+                <!-- Java Skill -->
+                <div class="skill-item">
+                    <div class="skill-circle">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">50%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" class="circle-75" />
+                        </svg>
+                        <h3>Java</h3>
+                    </div>
+                </div>
+
+                <!-- python Skill -->
+                <div class="skill-item">
+                    <div class="skill-circle">
+                        <div class="outer">
+                            <div class="inner">
+                                <div class="number">70%</div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <circle cx="80" cy="80" r="70" stroke-linecap="round" class="circle-80" />
+                        </svg>
+                        <h3>python</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Resume Section -->
+    <section id="resume" class="page-content">
+        <div class="resume-container">
+            <h2><span class="highlight">Projects</span></h2>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="{{url_for('static', filename='pro1.png')}}" alt="Project 1">
+                    <div class="project-content">
+                        <h3>Cyme_Bot</h3>
+                        <p>Cyme_Bot is a project of a chatbot that can answer the questions asked by the user about cyber security.It clarify the doubts of the user about cyber crimes and also suggest some precautions to be taken to avoid those crimes.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/dhanasri1229/cyme_repo.git" target="_blank" class="github-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="{{url_for('static', filename='pro2.png')}}" alt="Project 2">
+                    <div class="project-content">
+                        <h3>Portfolio</h3>
+                        <p>Portfolio project is a simple portfolio of mine which is created by using HTML, CSS, JavaScript and Flask.It contains home, about, education, skills,and resume pages.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/yourusername/project2" target="_blank" class="github-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="{{url_for('static', filename='pro3.jpg')}}" alt="Project 3">
+                    <div class="project-content">
+                        <h3>Cinemax</h3>
+                        <p>Cinemax is a project of movie ticket booking system.It is a simple website where we can book tickets for a movie.Here we can see the list of movies, theaters, show times and the seats available for booking.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/dhanasri1229/cinemax.git" target="_blank" class="github-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download CV Button -->
+            <div class="cv-download">
+                <a href="{{url_for('static', filename='dhana resume.pdf')}}" download class="download-btn">
+                    Download CV <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-content">
+        <div class="contact-content">
+            <h2>Contact <span class="highlight">Me</span></h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info">
+                        <h3>Location</h3>
+                        <p>Vijayawada, Andhra Pradesh</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>nagadhanasrigutthula@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <p>+91 9346376150</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // View Projects button functionality
+        document.querySelector('.btn').addEventListener('click', function() {
+            document.querySelector('#resume').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
